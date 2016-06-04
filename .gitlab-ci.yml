@@ -3,7 +3,8 @@ image: java:openjdk-8-jdk
 before_script:
     - apt-get update && apt-get install -y gradle
   
-all_tasks:
+tasks:
+    script:
         - gradle :core:test
         - javadoc -d ./docs -sourcepath ./core/src -subpackages com
         - git config --global user.name 'Conductor Gitlab CI Runner'
