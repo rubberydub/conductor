@@ -1,0 +1,7 @@
+testing:
+    script:
+        - gradle :core:test
+
+javadocs:
+    script:
+        - javadoc -d ./docs -sourcepath ./core/src -subpackages com
