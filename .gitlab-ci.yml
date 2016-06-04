@@ -9,7 +9,7 @@ all_tasks:
         - javadoc -d ./docs -sourcepath ./core/src -subpackages com
         - git config --global user.name 'Conductor Gitlab CI Runner'
         - git config --global user.email 'gitlab.runner@conductor.com'
-        - git remote --set-url origin https://gitlab.com/rubberydub/conductor.git
+        - git remote --set-url --push origin https://gitlab.com/rubberydub/conductor.git
         - git add .
         - git commit -m 'tests passed, Javadocs generated'
         - git push origin production
