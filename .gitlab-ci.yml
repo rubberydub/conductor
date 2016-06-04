@@ -1,7 +1,7 @@
 image: java:openjdk-8-jdk
 
 before_script:
-    - apt-get -u upgrade --assume-no && apt-get install -y gradle
+    - apt-get -u upgrade && apt-get install -y gradle
   
 testing:
     script:
