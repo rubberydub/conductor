@@ -3,7 +3,7 @@ image: java:openjdk-8-jdk
 before_script:
     - apt-get update && apt-get install -y gradle
   
-tasks:
+all_tasks:
     script:
         - gradle :core:test
         - javadoc -d ./docs -sourcepath ./core/src -subpackages com
