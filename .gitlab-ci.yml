@@ -10,6 +10,7 @@ all_tasks:
         - git config --global user.name 'Conductor Gitlab CI Runner'
         - git config --global user.email 'gitlab.runner@conductor.com'
         - git remote set-url origin https://gitlab.com/rubberydub/conductor.git
+        - git checkout production
         - git add .
         - git commit -m 'tests passed, Javadocs generated'
         - git push origin production
