@@ -10,3 +10,11 @@ testing:
 javadocs:
     script:
         - javadoc -d ./docs -sourcepath ./core/src -subpackages com
+
+deploy:
+    script:
+        - git config --global user.name 'Conductor Gitlab CI Runner'
+        - git config --global user.email 'gitlab.runner@conductor.com'
+        - git add .
+        - git commit -m 'tests passed, Javadocs generated'
+        - git push origin production
